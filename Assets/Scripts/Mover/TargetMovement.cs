@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class MoveToTarget : MonoBehaviour
+public class TargeMovement: MonoBehaviour
 {
     [SerializeField] private int _speed = 5;
     

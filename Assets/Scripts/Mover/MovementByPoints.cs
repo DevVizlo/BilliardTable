@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[RequireComponent(typeof(MoveToTarget))]
+[RequireComponent(typeof(TargeMovement))]
 public class MovementByPoints : MonoBehaviour
 {
     [SerializeField] private Transform _pathPoints;
@@ -8,12 +8,12 @@ public class MovementByPoints : MonoBehaviour
     private Transform[] _points;
     private int _currentPoint;
 
-    private MoveToTarget _moverToTarget;
+    private TargeMovement _moverToTarget;
     private Transform _target;
 
     private void Start()
     {
-        _moverToTarget = GetComponent<MoveToTarget>();
+        _moverToTarget = GetComponent<TargeMovement>();
 
         SetPoints();
 

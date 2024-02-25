@@ -22,8 +22,8 @@ public class Spawner : MonoBehaviour
 
             SpawnPoint pointToSpawn = RandomPoint();
 
-            MoveToTarget moverToTarget = Instantiate(pointToSpawn.ReceiveBall(), pointToSpawn.transform.position, Quaternion.identity);
-            moverToTarget.SetTarget(pointToSpawn.ReceiveBallTarget());
+            TargeMovement moverToTarget = Instantiate(pointToSpawn.ReceiveBall, pointToSpawn.transform.position, Quaternion.identity);
+            moverToTarget.SetTarget(pointToSpawn.ReceiveBallTarget);
         }
     }
 
